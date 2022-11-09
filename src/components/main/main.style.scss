@@ -1,0 +1,122 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 0;
+	background-color: #edededf1;
+
+	.heading_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		-webkit-user-select: none;
+		user-select: none;
+
+		h1 {
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			font-weight: 900;
+			font-size: 35px;
+			color: purple;
+		}
+	}
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.quiz_type_cont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5em;
+		padding: 1em;
+		border: 3px solid black;
+		background-color: rgba(35, 35, 35, 0.441);
+
+		.quiz {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2em 1.5em;
+			-webkit-user-select: none;
+			user-select: none;
+			cursor: pointer;
+			transition: 0.35s;
+
+			&:hover {
+				margin-block: 1em;
+				background-color: #262626d4;
+			}
+
+			.quiz_icon_cont {
+				width: 30%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					font-size: 18px;
+				}
+			}
+
+			.quiz_title_cont {
+				width: 70%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-left: 1em;
+
+				h2 {
+					font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+						sans-serif;
+					font-size: 25px;
+					letter-spacing: 3px;
+					color: #ffffff;
+				}
+			}
+
+			&:nth-of-type(1) {
+				.quiz_icon_cont {
+					svg {
+						fill: #ffa600de;
+					}
+				}
+			}
+
+			&:nth-of-type(2) {
+				.quiz_icon_cont {
+					svg {
+						fill: #009dffde;
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				.quiz_icon_cont {
+					svg {
+						fill: #ffee00de;
+					}
+				}
+			}
+
+			&:nth-of-type(4) {
+				.quiz_icon_cont {
+					svg {
+						fill: #0073ffde;
+					}
+				}
+			}
+		}
+	}
+
+	.quiz_cont {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3em;
+	}
+}
